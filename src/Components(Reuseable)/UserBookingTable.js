@@ -21,7 +21,7 @@ const UserBookingTable = ({ userId }) => {
 
   const fetchUserBookings = () => {
     axios
-      .get(`http://localhost:9000/user/bookings/getbookings/${userId}`, {
+      .get(`https://cnnct-backend-oaje.onrender.com/user/bookings/getbookings/${userId}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => {
@@ -44,7 +44,7 @@ const UserBookingTable = ({ userId }) => {
 
   const fetchParticipants = (Bookingname) => {
     axios
-      .get(`http://localhost:9000/user/events/geteventparticipants/${Bookingname}`, {
+      .get(`https://cnnct-backend-oaje.onrender.com/user/events/geteventparticipants/${Bookingname}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => {

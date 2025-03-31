@@ -86,7 +86,7 @@ const UserAvailabiltySlots = () => {
     const fetchTimeSlots = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:9000/user/timeslotavailabilty/getuseravailabilitytimeslot/${userId}`,
+          `https://cnnct-backend-oaje.onrender.com/user/timeslotavailabilty/getuseravailabilitytimeslot/${userId}`,
           { headers: { Authorization: `Bearer ${token}` } }
         );
 
@@ -195,7 +195,7 @@ const UserAvailabiltySlots = () => {
       }
 
       const response = await axios.put(
-        `http://localhost:9000/user/timeslotavailabilty/updateuseravailabilitytimeslot/${userId}`,
+        `https://cnnct-backend-oaje.onrender.com/user/timeslotavailabilty/updateuseravailabilitytimeslot/${userId}`,
         backendFormattedSlots,
         { headers: { Authorization: `Bearer ${token}` } }
       );

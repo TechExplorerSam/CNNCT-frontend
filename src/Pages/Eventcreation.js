@@ -45,7 +45,7 @@ const Eventcreation = () => {
       const token = localStorage.getItem("token"); 
 
       const response = await axios.post(
-        "http://localhost:9000/user/events/createanevent",
+        "https://cnnct-backend-oaje.onrender.com/user/events/createanevent",
         {
           ...eventData,
           banner: {

@@ -82,19 +82,19 @@ const handleSecondStageSubmit = (e) => {
 const handlefinalsubmit = async (e) => {
   e.preventDefault();
   
-  console.log("🚀 Submitting Final Signup Data...");
-  console.log("📌 Form Data Before Submit:", formData);
+  console.log(" Submitting Final Signup Data...");
+  console.log(" Form Data Before Submit:", formData);
 
   if (!formData.firstName || !formData.lastName || !formData.username || !formData.email || !formData.password || !formData.confirmPassword || selected.length === 0) {
-      console.error("❌ Missing Required Fields!", formData);
+      console.error(" Missing Required Fields!", formData);
       alert("Please fill all required fields before submitting.");
       return;
   }
 
   try {
-      console.log("📤 Sending Data to Backend...");
+      console.log(" Sending Data to Backend...");
 
-      const response = await axios.post('http://localhost:9000/user/signup', {
+      const response = await axios.post('https://cnnct-backend-oaje.onrender.com/user/signup', {
           firstName: formData.firstName,
           lastName: formData.lastName,
           username: formData.username,

@@ -29,7 +29,7 @@ const UserDashboard = () => {
   const fetchUser = async () => {
     try {
       console.log(`Fetching user details for user ID: ${userId}`);
-      const response = await axios.get(`http://localhost:9000/user/getUserDetails/${userId}`, {
+      const response = await axios.get(`https://cnnct-backend-oaje.onrender.com/user/getUserDetails/${userId}`, {
         headers: { "Authorization": `Bearer ${token}` }
       });
       setHostname(response.data.username);
@@ -47,7 +47,7 @@ const UserDashboard = () => {
 const currentUser=localStorage.setItem("user",JSON.stringify(hostname))
   const fetchUserEvents = async () => {
     try {
-      const response = await axios.get(`http://localhost:9000/user/events/getanevent/${hostname}`, {
+      const response = await axios.get(`https://cnnct-backend-oaje.onrender.com/user/events/getanevent/${hostname}`, {
         headers: { "Authorization": `Bearer ${token}` }
       });
       setEvents(response.data);
@@ -62,7 +62,7 @@ const currentUser=localStorage.setItem("user",JSON.stringify(hostname))
 
   const handleDelete = async (eventId) => {
     try {
-      await axios.delete(`http://localhost:9000/user/events/deleteanevent/${eventId}`, {
+      await axios.delete(`https://cnnct-backend-oaje.onrender.com/user/events/deleteanevent/${eventId}`, {
         headers: { "Authorization": `Bearer ${token}` }
       });
       setEvents(events.filter(event => event._id !== eventId));

@@ -29,7 +29,7 @@ const navigate = useNavigate();
 
   const fetchUserDetails = async () => {
     try {
-      const response = await axios.get(`http://localhost:9000/user/getUserDetails/${userId}`, {
+      const response = await axios.get(`https://cnnct-backend-oaje.onrender.com/user/getUserDetails/${userId}`, {
         headers: {
           'Authorization': 'Bearer ' + localStorage.getItem('token')
         }
@@ -66,7 +66,7 @@ const navigate = useNavigate();
     const { firstName, lastName } = formData;
 
     try {
-      await axios.put(`http://localhost:9000/user/update/${userId}`, { firstName, lastName }, {
+      await axios.put(`https://cnnct-backend-oaje.onrender.com/user/update/${userId}`, { firstName, lastName }, {
         headers: {
           'Authorization': 'Bearer ' + localStorage.getItem('token')
         }
@@ -95,7 +95,7 @@ const navigate = useNavigate();
     };
 
     try {
-      await axios.put(`http://localhost:9000/user/updateemailpassowrdorboth/${userId}`, credentials, {
+      await axios.put(`https://cnnct-backend-oaje.onrender.com/user/updateemailpassowrdorboth/${userId}`, credentials, {
         headers: {
           'Authorization': 'Bearer ' + localStorage.getItem('token')
         }

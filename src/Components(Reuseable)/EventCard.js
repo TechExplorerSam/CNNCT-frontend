@@ -39,7 +39,7 @@ const EventCard = ({
 
     try {
       await axios.put(
-        `http://localhost:9000/user/events/updateanevent/${_id}`,
+        `https://cnnct-backend-oaje.onrender.com/user/events/updateanevent/${_id}`,
         { isActive: newStatus },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -58,7 +58,7 @@ const EventCard = ({
   const saveEdits = async () => {
     try {
       const response=await axios.put(
-        `http://localhost:9000/user/events/updateanevent/${_id}`,
+        `https://cnnct-backend-oaje.onrender.com/user/events/updateanevent/${_id}`,
         editedEvent,
         { headers: { Authorization: `Bearer ${token}` } }
       );
