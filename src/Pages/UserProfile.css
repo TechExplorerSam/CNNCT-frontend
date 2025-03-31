@@ -1,0 +1,137 @@
+.user_edit_profile_container{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    border: 1px solid  white;
+    background-color: white;
+    width: 78%;
+    height: 70%;
+    margin-left: 20%;
+    gap: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 25px;
+   
+}
+
+.user_edit_profile_name_container{
+    border-bottom: 1px solid grey;
+    padding-left: 5%;
+    padding-top: 5%;
+    
+}
+.user_edit_profile_name_container h3{
+    width: 10%;
+    color: #1877F2;
+    border-bottom: 1px solid #1877F2;
+    padding-bottom: 0.5%;
+}
+
+.user_edit_profile_details_form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 5%;
+    padding-top: 3%;
+
+}
+
+.user_edit_profile_details_form label{
+    display: block;
+    font-weight:500;
+    color: #5E5E5E;
+}
+.user_edit_profile_details_form input{
+    width: 40%;
+    height: 45px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+}
+.user_edit_profile_details_form button{
+    margin-left: 83%;
+    margin-bottom: 2%;
+}
+
+@media screen and (max-width: 768px) {
+    .user_edit_profile_container{
+        width: 98%;
+        margin-left: 5%;
+        padding-right: 0;
+        padding-left: 0;
+        padding-top: 5%;
+        margin-top:5%;
+        margin-bottom: 15%;
+    }
+    .user_edit_profile_details_form input{
+        width: 90%;
+        height: 35px;
+        margin-left: 5%;
+        
+    }
+    .user_edit_profile_details_form button{
+        margin-left: 70%;
+    }
+    .user_edit_profile_name_container h3{
+        width: 100%;
+        font-size: 20px;
+    }
+    .user_edit_profile_name_container{
+        padding-left: 0%;
+        padding-top: 0%;
+    }
+    .user_edit_profile_name_container h3{
+        width: 100%;
+        font-size: 20px;
+    }
+    .user_edit_profile_name_container{
+        padding-left: 0%;
+        padding-top: 0%;
+    }
+    .user_edit_profile_details_form{
+        padding-left: 0%;
+        padding-top: 0%;
+    }
+    .user_edit_profile_details_form label{
+        font-size: 15px;
+        padding-top: 5%;
+    }
+    .user_edit_profile_details_form input{
+        width: 90%;
+        height: 35px;
+    }
+    .user_edit_profile_details_form button{
+        
+        width: 30%;
+        margin-bottom: 2%;
+        font-size: 15px;
+    }
+    .user_edit_profile_name_container h3{
+        font-size: 20px;
+    }
+    .user_edit_profile_name_container{
+        padding-left: 0%;
+        padding-top: 0%;
+    }
+    .user_edit_profile_details_form{
+        padding-left: 0%;
+        padding-top: 0%;
+    }
+    .user_edit_profile_details_form label{
+        font-size: 15px;
+    }
+    .user_edit_profile_details_form input{
+        width: 90%;
+        height: 35px;
+    }
+    .user_edit_profile_details_form button{
+        margin-left: 70%;
+        margin-bottom: 2%;
+        font-size: 15px;
+    }
+    .user_edit_profile_name_container h3{
+        font-size: 20px;
+    }
+    
+}

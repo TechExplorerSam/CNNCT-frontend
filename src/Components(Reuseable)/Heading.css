@@ -1,0 +1,38 @@
+.container {
+    display: block;
+    margin-left: 20%;
+    margin-top: 3%;
+}
+
+.h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.p1 {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+      
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+
+    .h1 {
+        font-size: 1.5rem;
+    }
+
+    .p1 {
+        font-size: 0.8rem;
+        margin-top: 4%;
+        margin-left: -5%;
+    }
+    
+}

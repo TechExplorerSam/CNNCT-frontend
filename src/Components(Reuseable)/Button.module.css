@@ -1,0 +1,433 @@
+.btn_primary_public{
+    background-color: #1877F2;
+    min-width:150px;
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 42px;
+    padding: 10px 20px;
+    position: fixed;
+    cursor: pointer;
+    left: 88%;
+    max-width: max-content;
+    min-width:max-content;
+    transform: translateY(50%);
+     
+}
+
+.btn_primary_public2{
+    background-color: #1877F2;
+    font-size: 21px;
+    width: 175.5pt;
+    height: 51pt;
+    min-width: max-content;
+    color: white;
+    border: none;
+    border-radius: 42px;
+    padding: 10px 20px;
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    left: 40%;
+}
+.btn_primary_landing{
+    display: inline-block;
+    align-self: flex-start;
+    padding: 12px 24px;
+    background-color: #1877F2; 
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    width: max-content;
+    height: 70px;
+    border-radius: 42px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    text-decoration: none;
+
+}
+.btn_primary_login{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: rgba(128, 128, 128, 0.508); 
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    width: max-content;
+    height: 70px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    text-decoration: none;
+
+}
+.btn_sidebar_create{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 1px solid #1877F2;
+    width: 68%;
+    border-radius: 19px;
+    color: #1877F2;
+    margin-top: 80px;
+    cursor: pointer;
+}
+.btn_sidebar_create2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background-color: #1877F2;
+    width: 68%;
+    border-radius: 19px;
+    color: white;
+    border: none;
+    margin-top: 80px;
+    cursor: pointer;
+}
+.btn_sidebar_create2 svg path{
+    fill: white;
+}
+.btn_userdashboard_add_new_events{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 24px;
+    background-color: transparent;
+    border: 1px solid #1877F2;
+    width: max-content;
+    height: max-content;
+    border-radius: 19px;
+    color: #1877F2;
+    margin-left: 85%;
+    position: absolute;
+    top: 70px;
+    
+}
+.btn_accept_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background-color: #00C35F; 
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    width: 130px;
+    height: 50px;
+    border-radius: 42px;
+    
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    text-decoration: none;
+}
+.btn_reject_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background-color: red; 
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    width: 130px;
+    height: 50px;
+    border-radius: 42px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    text-decoration: none;
+   
+}
+.btn_user_edit_profile_save{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background-color: #1877F2; 
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    width: 15%;
+    height: 56%;
+    border-radius: 42px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    text-decoration: none;
+
+}
+
+.btn_sidebar_dispalyusername{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 1px solid black;
+    width: 80%;
+    height: 50%;
+    border-radius: 19px;
+    color: black;
+    margin-top: 250px;
+}
+.save{
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    background-color: #1877F2;
+    color: white;
+}
+.cancel{
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    background-color: #F1F1F1;
+    color: black;
+    
+
+}
+.btn_sidebar_logout{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 21px 23px;
+gap: 7px;
+margin-top: 14%;
+width: 133px;
+height: 48px;
+left: 72px;
+top: 11px;
+border: none;
+background: #F3F3F1;
+border-radius: 22px;
+}
+.btn_useravailability{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 1px solid #1877F2;
+    width: 100%;
+    height: 70px;
+    border-radius: 19px;
+    margin-left: 24%;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn_calender_view{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    background-color: transparent;
+    border: 1px solid #1877F2;
+    width: 100%;
+    height: 70px;
+    border-radius: 19px;
+     margin-left: 44%;
+    background-color: transparent;
+    cursor: pointer;
+    
+
+}
+.btn_primary_continue{
+    background-color: #1877F2;
+    font-size: 21px;
+    width: 50%;
+    height: 44pt;
+    min-width: max-content;
+    color: white;
+    border: none;
+    border-radius: 42px;
+    padding: 10px 20px;
+    position: absolute;
+    cursor: pointer;
+    top: 89%;
+    left: 1%;
+}
+.btn_user_edit_profile_save1{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background-color: #1877F2; 
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    width: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 20%;
+    height: 56%;
+    width: 10%;
+    border-radius: 42px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    text-decoration: none; */
+    display: none;
+}
+@media only screen and (max-width:600px){
+    .btn_primary_public{
+        background-color: #1877F2;
+        min-width:150px;
+        height: 40px;
+        color: white;
+        border: none;
+        border-radius: 42px;
+        padding: 10px 20px;
+        position: absolute;
+        cursor: pointer;
+        left: 90%;
+        margin-top: 13px;
+        top: 6%;
+        max-width: max-content;
+        min-width:max-content;
+        transform: translateX(-120%);
+    }
+    .btn_primary_public2{
+        background-color: #1877F2;
+        font-size: 21px;
+        width: 124pt;
+        height: 44pt;
+        min-width: max-content;
+        color: white;
+        border: none;
+        border-radius: 42px;
+        padding: 10px 20px;
+        position: absolute;
+        cursor: pointer;
+        top: 49%;
+        left: 30%;
+
+    }
+    .btn_primary_continue{
+       background-color: #1877F2;
+        font-size: 21px;
+        width: 80%;
+        height: 44pt;
+        min-width: max-content;
+        color: white;
+        border: none;
+        border-radius: 42px;
+        padding: 10px 20px;
+        position: absolute;
+        cursor: pointer;
+        top: 84%;
+        left: 1%;
+        margin-top: 12%;
+        margin-bottom: 42%;
+        margin-left: 8%;
+    }
+    .btn_primary_landing{
+        background-color: #1877F2;
+        font-size: 21px;
+        width: 124pt;
+        height: 44pt;
+        min-width: max-content;
+        color: white;
+        border: none;
+        border-radius: 42px;
+        padding: 10px 20px;
+        position: absolute;
+        cursor: pointer;
+        top: 499%;
+        left: 20%;
+        transform: translateX(-30%);
+    }
+   .btn_primary_login{
+    display: none;
+   }
+   .btn_user_edit_profile_save1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background-color: #1877F2; 
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    
+    margin-top: -11%;
+    margin-bottom: 25%;
+    margin-left: 10%;
+    height: 56%;
+  
+    width: 50%;
+    height: 10%;
+    border-radius: 42px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+   
+}
+@media 
+only screen and (max-width: 768px) {
+    .btn_userdashboard_add_new_events{
+        top: 3%;
+        left: 76%;
+        margin-left: 0%;
+        transform: translateX(-50%);
+        margin-top: 0%;
+        width: 50%;
+        height: 30px;
+        position: absolute;
+        padding: 10px 20px;
+        font-size: 16px;
+
+
+    }
+    .btn_user_edit_profile_save{
+        top: 3%;
+        left: 76%;
+        margin-left: 0%;
+        transform: translateX(-215%);
+        width: 50%;
+
+    }
+    .btn_useravailability{
+        margin-left: 0%;
+        
+    }
+    .btn_calender_view{
+        margin-left: 0%;
+        
+    }
+    
+    
+
+    
+}

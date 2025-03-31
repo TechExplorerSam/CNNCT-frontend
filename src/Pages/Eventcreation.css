@@ -1,0 +1,332 @@
+.event_creation_container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 70%;
+    margin: 3% auto;
+    margin-left: 18%;
+    border: 1px solid #B6B6B6;
+    background-color: white;
+    border-radius: 25px;
+    padding: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+    justify-content: center;
+    align-items: center;
+}
+.event_creation_form_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid#2E2E2E;
+    width: 100%;
+    color: #1877F2;
+    padding-bottom: 3%;
+
+}
+.event_creation_form_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+}
+
+.event_creation_input_group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.event_creation_container label {
+    font-weight: 600;
+    color: #2E2E2E;
+    font-size: 18px;
+    width: 30%;  
+
+    text-align:center;
+}
+
+.event_creation_container label span {
+    display: inline;
+    color: red;
+}
+
+.event_creation_container input, 
+.event_creation_container textarea, 
+.event_creation_container select {
+    flex: 1;
+    height: 45px;
+    border: 1px solid #D0D0D0;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: white;
+    
+}
+
+.event_creation_container textarea {
+    height: 100px;
+    resize: none;
+}
+
+.event_creation_form_container_date_time {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    border-top: 1px solid #B6B6B6;
+    padding-top: 20px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.time-zone-select {
+    flex: 1;
+}
+
+.event_creation_form_buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.event_creation_form_buttons button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none; 
+}
+.event_creation_input_group2 {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 10px; 
+    width: 100%;
+    margin-top: 1%;
+    padding-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.event_creation_input_group2 label {
+    font-weight: 600;
+    color: #2E2E2E;
+    font-size: 22px;
+    width: 100%;
+    text-align: left; 
+    margin-left: 5%;
+    margin-bottom: 2px; }
+
+.banner_background_container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #342B26;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+.userprofileimage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid black;
+    margin-top: 2%;
+}
+
+.color_container {
+    display: flex;
+    width: 50%;
+    height: 30px;
+    gap: 10px;
+    border-radius: 50%;
+    margin-top: 2%;
+    margin-left: 4%;
+}
+
+
+.color_circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.color_cube{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 5%;
+    margin-left: 8%;
+    gap: 10px;
+}
+.color_cube input{
+   
+    border: 1px solid black;
+    margin-top: 5%;
+    margin-left: 115%;
+    gap: 10px
+
+}
+.link_email_group{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.links_and_email_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    border-top: 1px solid #B6B6B6;
+    padding-top: 20px;
+    margin-top: 5%;
+    
+}
+.link_email_group label {
+    font-weight: 600;
+    color: #2E2E2E;
+    font-size: 16px;
+    width: 20%; 
+    text-align: right; 
+    display: flex;
+    align-items: center; 
+}
+
+.links_and_email_container input{
+    height: 45px;
+    width: 50%;
+    border: 1px solid #D0D0D0;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: white;
+    margin-right: 22%;
+}    
+.userprofileimage img{
+    width:100%
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .event_creation_container {
+
+        width: 100%;
+        margin-left: 5%;
+        margin-bottom: 22%;
+    }
+    .event_creation_form_header {
+        font-size: 20px;
+    }
+    .event_creation_input_group label {
+        display: flex;
+        font-size: 16px;
+    }
+    .event_creation_container input, 
+    .event_creation_container textarea, 
+    .event_creation_container select {
+        font-size: 14px;
+    }
+    .event_creation_form_buttons button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    .event_creation_form_container_date_time {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .event_creation_form_container_date_time label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .event_creation_form_container_date_time input {
+        width: 100%;
+        margin-bottom: 10px;
+    }   
+    .event_creation_input_group2 label {
+        font-size: 18px;
+    }
+    .banner_background_container {
+        width: 90%;
+        height: 200px;
+        margin-top: 5%;
+    }
+    .banner_background_container img {
+       display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+    .userprofileimage {
+        width: 120px;
+        height: 120px;
+    }
+    .color_container {
+        width: 80%;
+    }
+    .color_circle {
+        width: 40px;
+        height: 40px;
+    }
+    .color_cube {
+        width: 40px;
+        height: 40px;
+    }
+    .color_cube input{
+        width: 90px;
+        height: 30px;
+    }
+    
+  
+    .links_and_email_container {
+        width: 100%;
+        margin-top: 5%;
+    }
+    .links_and_email_container input{
+        width: 80%;
+        margin-right: 0;
+    }
+    .link_email_group {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .link_email_group label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .event_creation_form_container_date_time {
+       display: block;
+
+    }
+    .event_creation_form_container_date_time input {
+        width: 40%;
+        margin-bottom: 10px;
+    }
+
+}

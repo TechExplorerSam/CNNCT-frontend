@@ -1,0 +1,22 @@
+.user_dashboard_events_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(415px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+    align-items: stretch;
+    margin-left: 22%;
+
+    
+}
+@media screen and (max-width: 768px) {
+    .user_dashboard_events_container{
+        margin-left: 19%;
+        margin-top: 12%;
+        padding: 0;
+        gap: 70px;
+    }
+    
+}
+
+
+

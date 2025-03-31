@@ -1,0 +1,188 @@
+.card{
+   width: 320px;
+   background: white;
+   border-radius: 16px;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   width: 80%;
+   min-height: 200px;
+   position: relative;
+   font-family: Arial, sans-serif;
+   transition: 0.3s ease-in-out;
+   
+
+}
+.card:hover{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .activity-bar {
+    width: 100%;
+    height: 10px;
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 16px 16px 0 0;
+}
+.activity-bar.active {
+  background-color: #2563eb; 
+}
+.activity-bar.disabled {
+  background-color: #676767;
+}
+  
+  .edit-icon {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+  
+  .edit-icon:hover {
+    opacity: 1;
+  }
+  
+  .event-date{
+    font-size: 15px;
+    color: #666;
+    margin-right: 10px;
+  }
+  .event-description {
+    font-size: 13px;
+    color: #666;
+    margin: 5px 0;
+  }
+  .event-time{
+    font-size: 17px;
+    color: #007bff;
+    margin: 5px 0;
+
+  }
+  
+  .meeting-time {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .card-footer-content {
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    border-top: 1px solid black;
+   
+    margin-top: 29px;
+    padding: 10px 0;
+
+    gap: 10px;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+    
+  }
+  
+  input:checked + .slider {
+    background-color: #007bff;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(18px);
+  }
+  
+  .footer-icon {
+    display: flex;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+    position: relative;
+    gap: 10px;
+
+  }
+  .footer-icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .footer-icon:hover {
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 600px) {
+    .card {
+      width: 75%;
+      padding: 10px;
+      margin-top: -10%;
+      margin-left:-10%;
+      
+      
+    }
+    .card-header {
+      font-size: 16px;
+    }
+    .event-description {
+      font-size: 12px;
+    }
+    .event-time {
+      font-size: 14px;
+    }
+    .meeting-time {
+      font-size: 14px;
+    }
+    .footer-icon {
+      font-size: 16px;
+    }
+    .footer-icons{
+      font-size: 16px;
+    }
+    .footer-icon:hover {
+      font-size: 18px;
+    }
+    .activity-bar {
+      height: 8px;
+    }
+    
+  }
