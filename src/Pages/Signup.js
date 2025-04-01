@@ -105,7 +105,8 @@ const handlefinalsubmit = async (e) => {
       });
 
       console.log("✅ Signup Successful:", response.data);
-       localStorage.setItem('userId', response.data._id);
+       localStorage.setItem('userId', response.data.user._id);
+      localStorage.setItem('token',response.data.token);
       navigate('/UserDashboard');
       
       setFormData({
