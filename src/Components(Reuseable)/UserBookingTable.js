@@ -71,52 +71,57 @@ const UserBookingTable = ({ userId }) => {
     if (!selectedBooking) return;
     
     try {
-      const bookingId = selectedBooking._id; 
-      console.log("Accepting booking with ID:", bookingId);
-  
-      const response = await axios.put(
-        `https://cnnct-backend-oaje.onrender.com/user/bookings/createabooking/${bookingId}`,
-        { status: "Accepted" }, 
-        { headers: { Authorization: `Bearer ${token}` } }
-      );
-  
-      if (response.status === 200) {
-        toast.success("Booking accepted successfully!");
-        fetchUserBookings();
-        closeParticipantsPopup();
-      } else {
-        toast.error("Failed to accept booking.");
-      }
+        const bookingId = selectedBooking._id;
+        console.log("Accepting booking with ID:", bookingId);
+
+        const response = await axios.post(
+            `https://cnnct-backend-oaje.onrender.com/user/bookings//bookanevent/${bookingId}`, 
+           
+            { 
+              BookingUser: userId,
+              Bookingdate: new Date().toISOString().split("T")[0],
+              status: "Accepted" },
+            { headers: { Authorization: `Bearer ${token}` } }
+        );
+
+        if (response.status === 200) {
+            toast.success("Booking accepted successfully!");
+            fetchUserBookings(); 
+            closeParticipantsPopup();
+        } else {
+            toast.error("Failed to accept booking.");
+        }
     } catch (error) {
-      console.error("Error accepting booking:", error);
-      toast.error("Something went wrong.");
+        console.error("Error accepting booking:", error);
+        toast.error("Something went wrong.");
     }
-  };
-  
+};
+
   const handleRejectBooking = async () => {
     if (!selectedBooking) return;
     
     try {
-      const bookingId = selectedBooking._id; 
-      console.log("Rejecting booking with ID:", bookingId);
-  
-      const response = await axios.delete(
-        `https://cnnct-backend-oaje.onrender.com/user/bookings/accept/${bookingId}`,
-        { headers: { Authorization: `Bearer ${token}` } }
-      );
-  
-      if (response.status === 200) {
-        toast.success("Booking rejected successfully!");
-        fetchUserBookings();
-        closeParticipantsPopup();
-      } else {
-        toast.error("Failed to reject booking.");
-      }
+        const bookingId = selectedBooking._id; 
+        console.log("Rejecting booking with ID:", bookingId);
+
+        const response = await axios.post(
+            `https://cnnct-backend-oaje.onrender.com/user/bookings/reject/${bookingId}`,
+            { status: "Rejected" },
+            { headers: { Authorization: `Bearer ${token}` } }
+        );
+
+        if (response.status === 200) {
+            toast.success("Booking rejected successfully!");
+            fetchUserBookings();
+            closeParticipantsPopup();
+        } else {
+            toast.error("Failed to reject booking.");
+        }
     } catch (error) {
-      console.error("Error rejecting booking:", error);
-      toast.error("Something went wrong.");
+        console.error("Error rejecting booking:", error);
+        toast.error("Something went wrong.");
     }
-  };
+};
 
   const closeParticipantsPopup = () => {
     setShowPopup(false);
