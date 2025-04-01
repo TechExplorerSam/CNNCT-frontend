@@ -16,7 +16,7 @@ const Eventcreation = () => {
 
   // Form state
   const [eventData, setEventData] = useState({
-    Eventtopic: "",
+    EventTopic: "",
     password: "",
     description: "",
     Hostname: localStorage.getItem("username"),
@@ -65,7 +65,7 @@ const Eventcreation = () => {
       alert("Event Created Successfully!");
 
       setEventData({
-        Eventtopic: "",
+        EventTopic: "",
         password: "",
         description: "",
         date: "",
@@ -89,6 +89,14 @@ const Eventcreation = () => {
     setColorCode(color);
     setBannerBackgroundColor(color);
   }
+  const handleTimezoneChange = (timezone) => {
+    setSelectedTimezone(timezone.value); 
+    setEventData((prevData) => ({
+      ...prevData,
+      timezone: timezone.value, 
+    }));
+  };
+  
 
   return (
     <div>
@@ -130,7 +138,7 @@ const Eventcreation = () => {
                   <option>PM</option>
                 </select>
                 <div className="time-zone-select">
-                  <TimezoneSelect value={selectedTimezone} onChange={setSelectedTimezone} />
+                  <TimezoneSelect value={{ value: selectedTimezone, label: selectedTimezone }}  onChange={handleTimezoneChange} />
                 </div>
               </div>
 
