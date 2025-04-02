@@ -65,7 +65,70 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
+
+
+
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # CNNCT-frontend
+
+DEMO CREDENTIALS 
+{
+    "username":"michael_smith9071",
+    "password":"Michael@2024"
+} 
+ if you want to create a new user just signup
+
+FEATURES IMPLEMENTED
+1. Landing Page
+A public-facing landing page.
+Ensure it is responsive for all devices.
+2. Signup and Login Page
+Signup:
+Input fields for email, password, and username.
+Basic validations (e.g., unique email, password strength).
+Secure password hashing (e.g., using bcrypt).
+Login:
+Input fields for email and password.
+Login authentication using JWT or session-based authentication.
+3. Event & Meeting Management
+Create & Manage Meetings
+Users can schedule meetings.
+Ability to edit, delete, activate, and deactivate meetings.
+Users can view meeting schedules categorized as:
+Upcoming Meetings
+Pending Meetings
+Canceled Meetings
+4. Users can set their availability (like Calendly), specifying when they are available or unavailable & Conflict Handling
+Users can configure availability settings for meetings and events.
+Real-time conflict detection:
+If an event is already scheduled for a time slot, the system prevents overlapping meetings.
+Conflict alerts appear when a user tries to schedule an event at the same time as an existing one.
+5. Event Creation & Customization
+Events require essential details such as:
+Event title, description, and date/time.
+Manually added event link (Google Meet, Zoom, etc.).
+Banner image and background color customization.
+Password protection for events:
+Users can set a password for an event.
+Participants must enter the password to join.
+6. Event Participation & Approval
+Users can share event links with attendees.
+6. Settings Page
+Options for users to manage their account:
+Update basic information (e.g., name, email, password).
+On email and password updation the user should be logged out
+7. Logout Feature
+Provide a Logout button to securely end the user session.
+8. Mobile Responsive Public Link Page
+The public-facing sharable event/meeting page should
+Be fully responsive, optimized for mobile viewing.
+Use adaptive designs for different screen sizes.
+
+
+Two display views
+
+Add availability view: User can add there availability for the entire day
+Calendar View: Similar to Google Calendar, showing all scheduled meetings.
+
