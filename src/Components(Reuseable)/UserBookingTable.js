@@ -75,7 +75,7 @@ const UserBookingTable = ({ userId }) => {
         console.log("Accepting booking with ID:", bookingId);
 
         const response = await axios.post(
-            `https://cnnct-backend-oaje.onrender.com/user/bookings//bookanevent/${bookingId}`, 
+            `https://cnnct-backend-oaje.onrender.com/user/bookings/bookanevent/${bookingId}`, 
            
             { 
               BookingUser: userId,
