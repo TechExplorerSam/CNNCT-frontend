@@ -79,6 +79,7 @@ const UserBookingTable = ({ userId }) => {
            
             { 
               BookingUser: userId,
+               Bookingname: selectedBooking.Bookingname,
               Bookingdate: new Date().toISOString().split("T")[0],
               status: "Accepted" },
             { headers: { Authorization: `Bearer ${token}` } }
