@@ -19,7 +19,7 @@ const Eventcreation = () => {
     EventTopic: "",
     password: "",
     description: "",
-    Hostname: localStorage.getItem("username"),
+    Hostname: "",
     date: "",
     time: "",
     period: "AM",
@@ -38,7 +38,25 @@ const Eventcreation = () => {
     e.preventDefault();
     setStage(2);
   };
-
+  const handleCancel = () => {
+    setEventData({
+      EventTopic: "",
+      password: "",
+      description: "",
+      Hostname: "",
+      date: "",
+      time: "",
+      period: "AM",
+      duration: "30 minutes",
+      link: "",
+      emails: "",
+      bannerColor: colorCode,
+      timezone: selectedTimezone,
+    });
+  
+    setStage(1);
+  };
+  
   const handleSecondStageFormSubmission = async (e) => {
     e.preventDefault();
     try {
@@ -109,10 +127,10 @@ const Eventcreation = () => {
         </div>
 
         {stage === 1 && (
-          <form className="event_creation_form_container" onSubmit={handleFirstStageFormSubmission}>
+          <form className="event_creation_form_container">
             <div className="event_creation_input_group">
               <label>Event Topic <span>*</span></label>
-              <input type="text" name="topic" value={eventData.topic} onChange={handleInputChange} placeholder="Set a conference topic" required />
+              <input type="text" name="EventTopic" value={eventData.topic} onChange={handleInputChange} placeholder="Set a conference topic" required />
             </div>
 
             <div className="event_creation_input_group">
@@ -126,7 +144,7 @@ const Eventcreation = () => {
             </div>
             <div className="event_creation_input_group">
               <label>Hostname <span>*</span></label>
-              <input type="text" name="topic" value={eventData.Hostname}  placeholder="" required readOnly/>
+              <input type="text" name="topic"  placeholder="" required />
             </div>
             <div className="event_creation_form_container_date_time">
               <div className="event_creation_input_group">
@@ -154,7 +172,7 @@ const Eventcreation = () => {
             </div>
 
             <div className="event_creation_form_buttons">
-              <Buttons buttontext={'Cancel'} typeofstyle={'cancel'} />
+              <Buttons buttontext={'Cancel'} typeofstyle={'cancel'}  buttonactionfunction={handleCancel } />
               <Buttons buttontext={'Next'} typeofstyle={'save'} buttonactionfunction={handleFirstStageFormSubmission} />
             </div>
           </form>
@@ -195,7 +213,7 @@ const Eventcreation = () => {
             </div>
 
             <div className="event_creation_form_buttons">
-              <Buttons buttontext={'Cancel'} typeofstyle={'cancel'} />
+              <Buttons buttontext={'Cancel'} typeofstyle={'cancel'}  buttonactionfunction={handleCancel}  />
               <Buttons buttontext={'Create Event'} typeofstyle={'save'} buttonactionfunction={handleSecondStageFormSubmission} />
             </div>
           </form>
